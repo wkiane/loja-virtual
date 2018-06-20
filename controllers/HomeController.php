@@ -3,8 +3,11 @@
 class HomeController extends Controller {
 
     public function index() {
-        $array = [];
-        $this->loadTemplate('home', $array);
-    }
+        $dados = [];
 
+        $produtos = new Produtos();
+        $dados['produtos'] = $produtos->listar(8);
+
+        $this->loadTemplate('home', $dados);
+    }
 }

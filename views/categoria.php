@@ -1,4 +1,4 @@
-<h2 class="font-weight-light text-center text-uppercase header my-3">Produtos</h2>
+<h1 class="font-weight-light text-center text-uppercase header my-3"><?php echo $categoria;?></h1>
 <?php foreach ($produtos as $produto) : ?>
 	<div class="produto">
 		<h3 class="text-center"><?=$produto->nome?></h3>
